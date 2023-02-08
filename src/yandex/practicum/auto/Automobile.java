@@ -1,6 +1,6 @@
 package yandex.practicum.auto;
 
-class Automobile {
+class Automobile extends Transport {
     public Automobile() {
         wheelsNumber = 4;
     }

@@ -1,8 +1,7 @@
 package yandex.practicum.auto;
 
-class TezlaTruck {
+class TezlaTruck extends TezlaCar {
     protected double maxSpeedByDirt;
-
     public TezlaTruck() {
         maxSpeedByDirt = 30;
     }

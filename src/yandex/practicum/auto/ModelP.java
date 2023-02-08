@@ -1,6 +1,6 @@
 package yandex.practicum.auto;
 
-class ModelP {
+class ModelP extends TezlaCar {
     public ModelP() {
         speed = 0;
         maxSpeed = 120;

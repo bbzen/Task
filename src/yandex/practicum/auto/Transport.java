@@ -1,11 +1,11 @@
 package yandex.practicum.auto;
 
 class Transport {
-    private double speed;
-    private double maxSpeed;
-    private double acceleration;
-    private double brakingSpeed;
-    private int wheelsNumber;
+    public double speed;
+    public double maxSpeed;
+    public double acceleration;
+    public double brakingSpeed;
+    public int wheelsNumber;
 
     public void accelerate() {
         if (speed < maxSpeed) {
