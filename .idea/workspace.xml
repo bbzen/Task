@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de48584d-3141-4747-98fb-b92d062cc7f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Drafts/Praktikum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/yandex/practicum/auto1/Automobile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/yandex/practicum/auto1/ModelZ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/yandex/practicum/auto1/Practicum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/yandex/practicum/auto1/Tezla.java" afterDir="false" />
+    <list default="true" id="de48584d-3141-4747-98fb-b92d062cc7f2" name="Changes" comment="08-02-2023 evening commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/auto/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/auto/Automobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/auto/ModelP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/auto/ModelP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/auto/ModelZ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/auto/ModelZ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/auto/TezlaCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/auto/TezlaCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/auto/TezlaTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/auto/TezlaTruck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/auto/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/auto/Transport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +39,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/stas/IdeaProjects/Praktikum/Task/src/yandex/practicum/auto/Automobile.java"
+    "last_opened_file_path": "/home/stas/IdeaProjects/Praktikum/Task/src/yandex/practicum/auto/Automobile.java",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager" selected="Application.yandex.practicum.auto1.Practicum">
@@ -110,6 +102,18 @@
       <option name="presentableId" value="Default" />
       <updated>1675706070224</updated>
     </task>
+    <task id="LOCAL-00001" summary="08-02-2023 evening commit">
+      <created>1675860894790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675860894790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="08-02-2023 evening commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="08-02-2023 evening commit" />
   </component>
 </project>
