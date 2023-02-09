@@ -1,17 +1,24 @@
 package yandex.practicum.space.station;
 
-class ISS extends Mir {
+class ISS extends Zarya {
     // доступ к изменению параметров запрещён
     public ISS(double initialOxygenLevel, double initialEnergyLevel, double initialFuel) {
-
+        super(initialOxygenLevel, initialEnergyLevel);
         // требуется увеличить уровень кислорода и энергетических резервов
-        oxygenLevel = initialOxygenLevel;
-        energyReserve = initialEnergyLevel;
+        //oxygenLevel = initialOxygenLevel;
+        //energyReserve = initialEnergyLevel;
 
         // доступ к изменению полей запрещён
         fuel = initialFuel;
         vibration = 0;
         energyConsumption = 20;
+    }
+
+    @Override
+    void stabilize() {
+        for (int i = 0; i < 3; i++) {
+            super.stabilizeBySmallEngines();
+        }
     }
 
     // доступ к изменению метода запрещён

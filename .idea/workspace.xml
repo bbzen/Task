@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de48584d-3141-4747-98fb-b92d062cc7f2" name="Changes" comment="08-02-2023 evening commit">
-      <change afterPath="$PROJECT_DIR$/src/lostnfound/LostAndFoundOffice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lostnfound/Practicum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/musicapp/Practicum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/musicapp/Song.java" afterDir="false" />
+    <list default="true" id="de48584d-3141-4747-98fb-b92d062cc7f2" name="Changes" comment="First commit 07-02-2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Drafts/Praktikum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drafts/Praktikum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/space/station/ISS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/space/station/ISS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/yandex/practicum/space/station/Zvezda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yandex/practicum/space/station/Zvezda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,14 +40,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/stas/IdeaProjects/Praktikum/Task/src/yandex/practicum/auto/Automobile.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.musicapp.Practicum">
+  <component name="RunManager" selected="Application.Practicum">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vocation.calculator.Main" />
       <module name="Task" />
@@ -68,50 +58,11 @@
       </method>
     </configuration>
     <configuration name="Practicum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="yandex.practicum.auto.Practicum" />
+      <option name="MAIN_CLASS_NAME" value="yandex.practicum.space.station.Practicum" />
       <module name="Task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="yandex.practicum.auto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lostnfound.Practicum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lostnfound.Practicum" />
-      <module name="Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lostnfound.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="musicapp.Practicum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="musicapp.Practicum" />
-      <module name="Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="musicapp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="yandex.practicum.auto1.Practicum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="yandex.practicum.auto1.Practicum" />
-      <module name="Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="yandex.practicum.auto1.*" />
+          <option name="PATTERN" value="yandex.practicum.space.station.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,9 +72,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.musicapp.Practicum" />
-        <item itemvalue="Application.lostnfound.Practicum" />
-        <item itemvalue="Application.yandex.practicum.auto1.Practicum" />
         <item itemvalue="Application.Practicum" />
         <item itemvalue="Application.Main" />
       </list>
@@ -138,18 +86,6 @@
       <option name="presentableId" value="Default" />
       <updated>1675706070224</updated>
     </task>
-    <task id="LOCAL-00001" summary="08-02-2023 evening commit">
-      <created>1675860894790</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1675860894790</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="08-02-2023 evening commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="08-02-2023 evening commit" />
   </component>
 </project>
