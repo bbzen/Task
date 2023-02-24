@@ -1,64 +1,66 @@
 package Drafts;
 
-public class Practicum {
+class Animal {
+    private double weight;
+    private int age;
 
-    public static String getPopulationPercent(Continent continent) {
-        String result;
+    public Animal() {
+        this.weight = 0.0d;
+        this.age = 0;
+    }
 
-        switch (continent) {
-            case ASIA:
-                result = "59.5%";
-                break;
-            case AFRICA:
-                result = "16.9%";
-                break;
-            case NORTH_AMERICA:
-                result = "7.7%";
-                break;
-            case SOUTH_AMERICA:
-                result = "5.6%";
-                break;
-            case ANTARCTICA:
-                result = "<0.1%";
-                break;
-            case EUROPE:
-                result = "9.7%";
-                break;
-            case AUSTRALIA:
-                result = "0.5%";
-                break;
-            default:
-                result = "Такого материка не существует.";
-        }
+    public String say() {
+        return "Мяу, гав, хрю, кря!";
+    }
 
-/*        if (continent == Continent.ASIA) {
-            result = "59.5%";
-        } else if (continent == Continent.AFRICA) {
-            result = "16.9%";
-        } else if (continent == Continent.NORTH_AMERICA) {
-            result = "7.7%";
-        } else if (continent == Continent.SOUTH_AMERICA) {
-            result = "5.6%";
-        } else if (continent == Continent.ANTARCTICA) {
-            result = "<0.1%";
-        } else if (continent == Continent.EUROPE) {
-            result = "9.7%";
-        } else if (continent == Continent.AUSTRALIA) {
-            result = "0.5%";
-        } else {
-            result = "Такого материка не существует.";
-        }*/
+    public double getWeight() {
+        return weight;
+    }
 
-        return result;
+    public int getAge() {
+        return age;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
 
-enum Continent {
-    ASIA,
-    AFRICA,
-    NORTH_AMERICA,
-    SOUTH_AMERICA,
-    ANTARCTICA,
-    EUROPE,
-    AUSTRALIA
+class Fox extends Animal {
+    private String color;
+
+    public Fox(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String say() {
+        return "Grrrrr";
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+// научите лису говорить
+}
+
+public class Practicum {
+    public static void main(String[] args) {
+        Fox fox = new Fox("рыжий");
+        fox.setWeight(5.93d);
+        fox.setAge(5);
+        System.out.println("Вес лисы - " + fox.getWeight());
+        System.out.println("Возраст лисы - " + fox.getAge());
+        System.out.println("Цвет лисы - " + fox.getColor());
+        System.out.println("Лиса говорит - " + fox.say());
+    }
 }

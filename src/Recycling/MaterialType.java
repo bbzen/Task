@@ -1,7 +1,7 @@
 package Recycling;
 
 public enum MaterialType {
-    // создайте перечисление MaterialType со следующими значениями:
+    // создайте перечисление MaterialType со следующими значениями - done
 PLASTIC,
 METAL,
 GLASS,

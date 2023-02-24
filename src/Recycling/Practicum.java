@@ -7,8 +7,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Practicum {
-    // объявите поле для ссылки на карту (англ. map link)
-    ... = "https://recyclemap.ru/";
+    // объявите поле для ссылки на карту (англ. map link) - done
+    public static final String LINK = "https://recyclemap.ru/";
+    public static final int MIN_WEIGHT = 10;
+    public static final int MIN_MULTIPLIER = 10;
+    public static final int MAX_MULTIPLIER = 15;
     public static final List<RecyclableMaterial> materials = getMaterials();
     public static final Map<MaterialType, String> containers = getContainers();
 
@@ -16,23 +19,45 @@ public class Practicum {
         Scanner scanner = new Scanner(System.in);
         printMenu();
 
-        String commandValue = scanner.nextLine();
-        /* в зависимости от команды выполните следующие действия:
-           map - вывести на экран ссылку на карту;
-           recyclability - 1. напечатать сообщение "Введите код переработки:",
-                           2. добавить ввод кода (целое число),
-                           3. вызвать метод isRecycled;
-           bonus - 1. напечатать сообщение "Введите количество вторсырья, кг:",
-                   2. добавить ввод значения,
-                   3. рассчитать бонус, умножив вес на коэффициент:
-                       если вес меньше 10 кг, то коэффициент 10, иначе - 15,
-                   4. вывести сообщение "Количество бонусных баллов: <баллы>."
-        */
+        String commandValue = scanner.nextLine().toUpperCase();
+        ChatCommand chatCommand = ChatCommand.valueOf(commandValue);
+        /* В зависимости от команды выполните следующие действия:
+         *   map - вывести на экран ссылку на карту;
+         *   recyclability - 1. напечатать сообщение "Введите код переработки:",
+         *                   2. добавить ввод кода (целое число),
+         *                   3. вызвать метод isRecycled;
+         *   bonus - 1. напечатать сообщение "Введите количество вторсырья, кг:",
+         *           2. добавить ввод значения,
+         *           3. рассчитать бонус, умножив вес на коэффициент:
+         *               если вес меньше 10 кг, то коэффициент 10, иначе - 15,
+         *           4. вывести сообщение "Количество бонусных баллов: <баллы>."
+         */
 
+        switch (chatCommand) {
+            case MAP:
+                System.out.println(LINK);
+                break;
+            case RECYCLABILITY:
+                System.out.println("Введите код переработки:");
+                String code = scanner.next();
+                isRecycled(Integer.parseInt(code));
+                break;
+            case BONUS:
+                System.out.println("Введите количество вторсырья, кг:");
+                int weight = Integer.parseInt(scanner.next());
+                int bonus = 0;
+                if (weight < MIN_WEIGHT) {
+                    bonus = weight * MIN_MULTIPLIER;
+                } else {
+                    bonus = weight * MAX_MULTIPLIER;
+                }
+                System.out.printf("Количество бонусных баллов: %d.\r\n", bonus);
+                break;
+        }
     }
 
     // добавьте модификаторы в заголовок метода
-    ...  void isRecycled(int code) {
+    public static void isRecycled(int code) {
         for (RecyclableMaterial material : materials) {
             if (material.getCode() == code) {
                 System.out.print("Это " + material.getDescription() + ". ");
@@ -48,7 +73,7 @@ public class Practicum {
     }
 
     // добавьте модификаторы в заголовок метода
-    ... Map<MaterialType, String> getContainers() {
+    public static Map<MaterialType, String> getContainers() {
         Map<MaterialType, String> containers = new HashMap<>();
         containers.put(MaterialType.PLASTIC, "Пластик");
         containers.put(MaterialType.METAL, "Металл");

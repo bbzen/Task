@@ -5,7 +5,7 @@ public class RecyclableMaterial {
     private final MaterialType type;
     private final boolean isRecyclable;
     private final String description;
-    // объявите переменные с правильными модификаторами
+    // объявите переменные с правильными модификаторами - done
 
     RecyclableMaterial(int code, MaterialType type, boolean isRecyclable, String description) {
         this.code = code;
