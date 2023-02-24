@@ -1,66 +1,29 @@
 package Drafts;
 
-class Animal {
-    private double weight;
-    private int age;
+class Appender {
 
-    public Animal() {
-        this.weight = 0.0d;
-        this.age = 0;
+    public static int add(int a, int b) {
+        return a + b;
     }
 
-    public String say() {
-        return "Мяу, гав, хрю, кря!";
+    public static double add(double a, double b) {
+        return a + b;
     }
 
-    public double getWeight() {
-        return weight;
+    public static String add(String a, String b) {
+        return a + b;
     }
 
-    public int getAge() {
-        return age;
+    public static boolean add(boolean a, boolean b) {
+        return a || b;
     }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
-
-class Fox extends Animal {
-    private String color;
-
-    public Fox(String color) {
-        this.color = color;
-    }
-
-    @Override
-    public String say() {
-        return "Grrrrr";
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-// научите лису говорить
 }
 
 public class Practicum {
     public static void main(String[] args) {
-        Fox fox = new Fox("рыжий");
-        fox.setWeight(5.93d);
-        fox.setAge(5);
-        System.out.println("Вес лисы - " + fox.getWeight());
-        System.out.println("Возраст лисы - " + fox.getAge());
-        System.out.println("Цвет лисы - " + fox.getColor());
-        System.out.println("Лиса говорит - " + fox.say());
+        System.out.println("2 + 3 = " + Appender.add(2, 3));
+        System.out.println("9.4 + 1.2 = " + Appender.add(9.4, 1.2));
+        System.out.println("Кофе + машина = " + Appender.add("Кофе", "машина"));
+        System.out.println("true + false = " + Appender.add(true, false));
     }
 }
