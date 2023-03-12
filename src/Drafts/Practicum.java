@@ -1,29 +1,43 @@
 package Drafts;
 
-class Appender {
-
-    public static int add(int a, int b) {
-        return a + b;
-    }
-
-    public static double add(double a, double b) {
-        return a + b;
-    }
-
-    public static String add(String a, String b) {
-        return a + b;
-    }
-
-    public static boolean add(boolean a, boolean b) {
-        return a || b;
-    }
-}
+import java.util.ArrayList;
+import java.util.List;
 
 public class Practicum {
+
     public static void main(String[] args) {
-        System.out.println("2 + 3 = " + Appender.add(2, 3));
-        System.out.println("9.4 + 1.2 = " + Appender.add(9.4, 1.2));
-        System.out.println("Кофе + машина = " + Appender.add("Кофе", "машина"));
-        System.out.println("true + false = " + Appender.add(true, false));
+        // Первый магазин продает дорогие товары и хочет передавать копейки типом Long
+        List<Long> longList = new ArrayList<>();
+        longList.add(Long.MAX_VALUE);
+
+        new Printer<>(longList).print();
+
+        // Второй магазин продает товары подешевле и использует для передачи копеек тип Integer
+        List<Integer> intList = new ArrayList<>();
+        intList.add(100000);
+
+        new Printer<>(intList).print();
+
+        List<String> stringList = new ArrayList<>();
+        stringList.add("Hello");
+
+        // Этот вариант должен вызывать ошибку компиляции
+        //new Printer<>(stringList).print();
+    }
+
+}
+
+class Printer<T extends Number> {
+    private final List<T> list;
+
+    public Printer(List<T> list) {
+        this.list = list;
+    }
+
+    public void print() {
+        for (int i = 0; i < list.size(); i++) {
+            double price = list.get(i).doubleValue() / 100;
+            System.out.println("Цена товара: " + price + " руб.");
+        }
     }
 }
