@@ -1,12 +1,10 @@
 package Drafts;
 
+import java.util.*;
+
 public class Draft {
     public static void main(String[] args) {
-
-        System.out.println((319 - (319 % 100))/100);
-
-
+        Map<String, Integer> testMap = new HashMap<>();
+        List<Integer> testList = new ArrayList<>();
     }
-
-    char[] value = new char[10];
 }
